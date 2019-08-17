@@ -4,8 +4,8 @@ class CalculateInterest{
 public static void main(String args[]){
 
     for(int i=1;i<=8;i++){
-        double interest = calculateInterest(10000.00,i);
-        System.out.println("10000.00 at interest rate of " + i + " is equal to " + interest);
+        String interest = String.format("%.2f",calculateInterest(10000.00,i));
+        System.out.println("10000.00 at interest rate of " + i + "% is equal to " + interest);
     }
 }
 
